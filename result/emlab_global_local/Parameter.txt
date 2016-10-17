@@ -1,0 +1,13 @@
+max_x_value_of_map: 3
+Max_y_value_of_map: 9
+Min_x_value_of_map: -10
+Min_y_value_of_map: -7
+Number_of_place: 100
+Data_num: 3940
+Sliding_data_parameter: 1
+Word_class: 14
+Dataset: ../../training_dataset/Emergent_system_lab_high_camera/
+Nonparametric_Bayse: True
+Image_feature_dim: 4096
+Stick_breaking_process_max: 100
+parameter W: 20
