@@ -27,7 +27,7 @@ import file_read as f_r
 import nonpara_tool
 
 
-CNN_feature=1 #If you want to use image feature of 4096 dimensions,you shold set 1.
+CNN_feature=0 #If you want to use image feature of 4096 dimensions,you shold set 1.
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -169,7 +169,7 @@ def gibbs(data_pose,data_feature,data_word,word_data_ind):
 
             for i in range(clas_num):
                 prob_C_t[i] += Prob_Cal.multi_gaussian_log(data_pose[d],Myu_Ct[i],Sigma_Ct[i])
-                    prob_C_t[i]+=math.log(pi[i])
+                prob_C_t[i]+=math.log(pi[i])
                 
                 prob_C_t[i] +=Prob_Cal.multi_nomial_log(data_feature[d],fi_Ct[i])
 
